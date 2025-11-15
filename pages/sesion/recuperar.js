@@ -7,6 +7,7 @@ export default function Home() {
   return (
     <>
         <MainHead title="Recuperar"/>
+        <Link href={'/'}>Volver</Link>
     </>
     )
 }
