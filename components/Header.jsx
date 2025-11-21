@@ -6,17 +6,13 @@ import logo from "@/src/logo.png"
 export default function Header(props){
     return(
         <div className={styles.header}>
-            <Link href={'/dashboard/'}><Image src={logo} width={120}/></Link>
+            <Link href={'/dashboard/'}><Image src={logo} width={150} style={{filter: "invert()"}}/></Link>
             <div key="user" className={styles.header_options}>
-                <button className={styles.btnConfig}>
-                    <span className="material-icons">
+                <button className={`${styles.btnConfig} material-icons`}>
                         settings
-                    </span>
                 </button>
-                <button className={styles.btnConfig}>
-                    <span className="material-icons">
+                <button className={`${styles.btnConfig} material-icons`}>
                         exit_to_app
-                    </span>
                 </button>
             </div>
         </div>

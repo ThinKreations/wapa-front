@@ -48,16 +48,12 @@ export default function Home(){
                   <label className={styles.login_label}>Contraseña</label>
                   <div className={styles.underline}></div>
               </div>
-              {show?(<button className={styles.login_showpass} type="button" onClick={toShowPass}>
-                <span className="material-icons">
+              {show?(<button className={`${styles.login_showpass} material-icons`} type="button" onClick={toShowPass}>
                   visibility
-                </span>
-              </button>):(
-                <button className={styles.login_showpass} type="button" onClick={toShowPass}>
-                <span className="material-icons">
+                </button>):(
+                <button className={`${styles.login_showpass} material-icons`} type="button" onClick={toShowPass}>
                   visibility_off
-                </span>
-              </button>
+                </button>
               )}
               <Link href={'/sesion/recuperar'} className={styles.login_link_recover}>Olvidé mi contraseña</Link>
               <div className={styles.login_checkbox}><input type="checkbox" name="recordar"/><label>Recuerdame</label></div>
