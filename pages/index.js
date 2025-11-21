@@ -30,8 +30,7 @@ export default function Home(){
       <div className={styles.container}>
         <div className={styles.landing_block}>
             <Image src={logo} alt="WAPA" className={styles.logo}/>
-            <p>Bienvenido.<br/> Aquí podrás llevar un mejor control de tus listas de asistencia.</p>
-            
+            <p>Bienvenido.<br/>Aquí podrás llevar un mejor control de tus listas de asistencia.</p>
         </div>
         <div className={styles.auth_block}>
           {login? 
