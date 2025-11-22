@@ -5,7 +5,7 @@
 
 .container{
   background-color: var(--background);
-  background-image: linear-gradient(90deg, rgba(200, 200, 200, 0.6) 0%, rgba(230,230,230,0.9) 90%), url('../src/bg.jpg');
+  background-image: linear-gradient(90deg, rgba(200, 200, 200, 0.6) 0%, rgba(230,230,230,1) 90%), url('../src/bg.jpg');
   background-size: contain;
   background-repeat: repeat;
   color: var(--foreground);
@@ -42,11 +42,11 @@
   margin: 25px 0;
 }
 .landing_block{
-  /*filter: invert();*/
   width: 30vw;
   margin-top: none;
   text-align: center;
 }
+
 /* index - formulario de login */
 
 .login_form{
@@ -111,14 +111,13 @@
 .login_button{
     background-color: transparent;
     padding: 10px;
-    color: var(--input-border);
     font-family: Geist, Montserrat, Arial, Helvetica, sans-serif;
-    border:2px dotted var(--input-border);
+    border:3px dotted var(--input-border);
     outline: none;
     width: 100%;
 }
 .login_button:hover{
-    border:2px solid var(--input-border);
+    border:3px solid var(--input-border);
     color: var(--input-border-hover);
 }
 
@@ -165,30 +164,7 @@
   color: var(--input-border-hover);
 }
 
-/* Dashboard */
-
-.dashboard_container{
-  text-align: end;
-  padding-top: 110px;
-  padding-right: 30px;
-}
-
-.btnAgregar{
-    border: none;
-    outline: none;
-    background-color: rgb(75, 140, 36);
-    padding: 12px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    border-radius: 3px;
-    color: white;
-    font-size: 15px;
-    font-family: Geist, Montserrat, Arial, Helvetica, sans-serif;
-}
-
-
 @media (max-width: 600px) {
-  /* / */
   .container{
     background-color: black;
     display: flex;
@@ -213,9 +189,4 @@
     border: none;
     padding: 0px;
   }
-
-  /* /dashboard */
-  
-  
-
 }
